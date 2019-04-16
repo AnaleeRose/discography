@@ -1,0 +1,74 @@
+/*
+Developer: Savannah Skinner
+Table of Contents
+RESETS & MISC - Resets and anything that doesn't fit elsewhere
+SITE WIDE - Styles that apply to all sections
+NAVIGATION - logo, main nav
+MAINCONTENT - Article
+PLACEHOLDER - Placeholder
+MEDIA QUERIES
+Color Palette
+#40b59b - Aqua
+#ff747b - Orange/Pinkish Red
+#f49882 - Mango
+#fad8d4 - Pink
+#f9a733 - Pineapple Gold
+*/
+
+
+#slideshow {
+  width: 1000px;
+  height: 625px;
+  margin: 0 auto;
+  overflow:hidden;
+  box-shadow: 1rem 1rem 1rem #763134;
+}
+  .slideWrapper {
+  width: 4000px;
+  height: 1250px;
+  -webkit-animation: slide 25s ease-out infinite;
+  animation: slide 25s ease-out infinite;
+  margin-top: 0;
+  }
+
+  @-webkit-keyframes slide {
+    0%   {margin-top: 0;}
+    10%   {margin-top: 0;}
+    30%  {margin-top: -625px;}
+    40%  {margin-top: -625px;}
+    80%  {margin-top: -1250px;}
+    90%  {margin-top: -1250px;}
+    90%  {margin-top: -1250px;}
+    100%  {margin-top: 0px;}
+
+  }
+
+  .slide {
+
+  }
+
+  .slideImg {
+    color: rgba(0,0,0,0);
+    margin: 0;
+  }
+
+  .slideDance {
+        background: url(../imgs/main/twice_dance_L.png) no-repeat;
+  }
+
+  .slideLove {
+        background: url(../imgs/main/twice_love_L.png) no-repeat;
+  }
+
+  .slideCircle {
+        background: url(../imgs/main/twice_circle_L.png) no-repeat;
+  }
+
+  .slideImg {
+    background-color: #fff;
+    background-size: contain;
+    width: 1000px;
+    height: 625px;
+  }
+
+/*h2 {color: blue;}*/

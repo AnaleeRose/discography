@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Twice - Newsletter</title>
+    <meta name="description" content="A student project site on the jpop group Twice.">
+    <meta name="author" content="Savannah Skinner">
+    <link rel="icon" type="image/ico" href="imgs/logo/twicelogo_black.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One%7CMuli%7CLa+Belle+Aurore" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body id="top">
+    <a href="#mainContent" class="hide">Skip to Main Content</a>
+<article class="wrapper">
+    <header class="navHeader">
+        <nav class="navbar navbar-toggleable-sm">
+          <div class="container">
+            <a class="navbar-brand d-none d-sm-inline-block" href="index.html">
+              <img src="imgs/logo/twicelogo.png" alt="Twice logo" style="width: 7rem;">
+            </a>
+            <div class="navbar-nav flex-sm-row">
+                <li class="nav-item current"><a class="nav-link m-1 pr-2 pl-2 active" href="index.html">Home</a></li>
+                <li class="nav-item "><a class="nav-link m-1 pr-2 pl-2" href="members.html">Members</a></li>
+                <li class="nav-item "><a class="nav-link m-1 pr-2 pl-2" href="albums.html">Albums</a></li>
+                <li class="nav-item "><a class="nav-link m-1 pr-2 pl-2" href="join.html">Newsletter</a></li>
+            </div><!-- navbar-nav -->
+          </div><!-- container -->
+        </nav>
+    </header>
+    <article class="body" id="mainContent">
+        <h1>Join Our Newsletter</h1>
+        <section class="form">
+            <h2>Get the Latest Twice Updates!</h2>
+                <form action="#">
+                    <label for="fname">First Name: <input type="text" id="fname" name="fname" placeholder="Your first name.." required></label>
+                    <label for="lname">Last Name: <input type="text" id="lname" name="lname" placeholder="Your last name.." required></label>
+                <fieldset class="addressForm">
+                    <label for="address">Address: <input type="text" id="address" name="address" placeholder="Your address..." required></label>
+                    <label for="city">City: <input type="text" id="city" name="city" placeholder="Your city..." required></label>
+                    <label for="state">State: <input type="text" id="state" name="state" placeholder="Your state..." required></label>
+                    <label for="zip">Zipcode: <input type="text" id="zip" name="zip" placeholder="Your zip..." required></label>
+                </fieldset>
+                <fieldset class="bDay">
+                    <legend>Birthday:</legend>
+                    <label for="month"><input type="number" id="month" name="month" placeholder="Month" min="1" max="12" required></label>
+                    <label for="day"><input type="number" id="day" name="day" placeholder="day" min="1" max="31" required></label>
+                    <label for="year"><input type="number" id="year" name="year" placeholder="year" min="1850" max="2017" required></label>
+                </fieldset>
+                    <label for="email">Email: <input type="email" id="email" name="email" placeholder="Your email..." required></label>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" placeholder="Share your love for Twice!" required></textarea>
+                    <label for="agree">Do you agree to the <a href="terms.html">Terms and Conditions</a>?<input type="checkbox" id="agree" name="agree" required></label>
+                    <input type="submit" value="Join!" class="btn">
+                </form>
+        </section>
+
+        <footer class="footer">
+            <h3 class="footerH3">Want to get all the latest news on Twice?</h3>
+            <a href="join.html">Join Our Newsletter!</a>
+        </footer>
+        <a href="#top">Back to Top</a>
+    </article>
+</article>
+</body>
+</html>
