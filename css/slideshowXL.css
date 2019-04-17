@@ -17,15 +17,15 @@ Color Palette
 
 
 #slideshow {
-  width: 2000px;
-  height: 1250px;
+  width: 1800px;
+  height: 1125px;
   margin: 0 auto;
   overflow:hidden;
   box-shadow: 1rem 1rem 1rem #763134;
 }
   .slideWrapper {
-  width: 4000px;
-  height: 1250px;
+  width: 1800px;
+  height: 1125px;
   -webkit-animation: slide 25s ease-out infinite;
   animation: slide 25s ease-out infinite;
   margin-top: 0;
@@ -34,11 +34,11 @@ Color Palette
   @-webkit-keyframes slide {
     0%   {margin-top: 0;}
     10%   {margin-top: 0;}
-    30%  {margin-top: -1250px;}
-    40%  {margin-top: -1250px;}
-    80%  {margin-top: -2500px;}
-    90%  {margin-top: -2500px;}
-    90%  {margin-top: -2500px;}
+    30%  {margin-top: -1125px;}
+    40%  {margin-top: -1125px;}
+    80%  {margin-top: -2250px;}
+    90%  {margin-top: -2250px;}
+    90%  {margin-top: -2250px;}
     100%  {margin-top: 0px;}
 
   }
@@ -63,9 +63,18 @@ Color Palette
   .slideImg {
     background-color: #fff;
     background-size: contain;
-    width: 2000px;
-    height: 1250px;
+    width: 1800px;
+    height: 1125px;
   }
 
 
-/*h2 {color: blue;}*/
+.memberCard:before {
+    border-top: 38rem solid #40d8cc;
+    border-right: 40rem solid transparent;
+  }
+
+  footer a.more {
+   display: inline-block;
+   width: 10%;
+   margin: 0 45%;
+   }

@@ -71,4 +71,13 @@ Color Palette
     height: 625px;
   }
 
-/*h2 {color: blue;}*/
+  .memberCard:before {
+      border-top: 38rem solid #40d8cc;
+      border-right: 27rem solid transparent;
+    }
+
+ footer a.more {
+  display: inline-block;
+  width: 20%;
+  margin: 0 40%;
+  }

@@ -66,3 +66,21 @@ Color Palette
     height: 312px;
   }
 
+  .memberCard:before {
+      border-top: 35rem solid #40d8cc;
+      border-right: 20rem solid transparent;
+    }
+    .body {margin-top: 0rem;}
+    .navHeader {
+      background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,rgba(255,255,255,0.8) 73%,rgba(250,216,212,0.2) 100%);
+      position: static;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    .btnForm {
+    margin:0 42.5%;
+    width: 15%;
+    }

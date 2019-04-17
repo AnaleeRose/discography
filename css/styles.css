@@ -19,9 +19,9 @@ Color Palette
 
 @import "mainStyles.css";
 
-@import url("slideshowXL.css") only screen and (min-width: 2000px);
+@import url("slideshowXL.css") only screen and (min-width: 1800px);
 
-@import url("slideshowL.css") only screen and (max-width: 1999px) and (min-width: 1000px);
+@import url("slideshowL.css") only screen and (max-width: 1799px) and (min-width: 1000px);
 
 @import url("slideshowM.css") only screen and (max-width: 999px) and (min-width: 500px);
 
