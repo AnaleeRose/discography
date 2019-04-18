@@ -5,7 +5,7 @@
     <title>Twice - Newsletter</title>
     <meta name="description" content="A student project site on the kpop group Twice.">
     <meta name="author" content="Savannah Skinner">
-    <link rel="icon" type="image/ico" href="imgs/logo/twicelogo_black.png">
+    <link rel="icon" type="image/ico" href="imgs/logo/twicelogo_mini.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One%7CMuli%7CLa+Belle+Aurore" rel="stylesheet">
@@ -33,11 +33,11 @@
     <article class="body" id="mainContent">
         <h1 class="hide">Join Our Newsletter</h1>
         <section class="form mx-auto">
-            <div class="container-fluid mx-auto">
+            <div class="container-fluid mx-auto p-0">
               <h2>Get the Latest Twice Updates!</h2>
-               <form action="#" class="form-horizontal row mx-auto paddingLeft" id="join" method="post">
-                <h3 class="text-center text-sm-left col-12">About You:</h3>
-                    <fieldset class="name row col-12 col-md-6 col-lg-5 justify-content-left">
+               <form action="#" class="form-horizontal row mx-auto justify-content-md-center" id="join" method="post">
+                <h3 class="text-center text-sm-left col-11 pl-4">About You:</h3>
+                    <fieldset class="name row col-12 col-md-6 col-lg-5">
                      <div class="form-group col-12">
                         <label for="fname" class="control-label col-12">First Name:</label>
                         <div class="col-12">
@@ -53,7 +53,7 @@
                     </div>
                 </fieldset>
 
-                <fieldset class="bDay row col-12 col-md-6 justify-content-left offset-lg-1">
+                <fieldset class="bDay row col-12 col-md-5 justify-content-left offset-lg-1">
                     <legend class="col-12 ml-3">Birthday:</legend>
                     <div class="form-group col-12">
                         <label for="month" class="control-label col-12 hide">month</label>
@@ -124,7 +124,8 @@
                     </div>
                   </fieldset>
 
-                <h3 class="text-center text-sm-left col-12">Contact Info:</h3>
+                <h3 class="text-center text-sm-left col-11 pl-4">Contact Info:</h3>
+
                 <fieldset class="addressForm row col-12 col-md-6">
                     <legend class="hide">Address:</legend>
                     <div class="form-group col-12">
@@ -217,12 +218,12 @@
                     <h3 class="text-center text-sm-left col-12">Comments?</h3>
                     <div class="form-group col-12">
                         <label for="comments" class="hide">Comments:</label>
-                        <div class="col-12">
+                        <div class="ml-2 ml-sm-3">
                             <textarea class="form-control" id="comments" name="comments" placeholder="Share your love for Twice!" maxlength="250"></textarea>
                         </div>
                     </div>
 
-                    <label for="agree" class="ml-4 col-12 col-md-10 col-lg-12">Do you agree to the <a href="terms.html">Terms and Conditions</a>?<input type="checkbox" id="agree" name="agree" required></label>
+                    <label for="agree" class="ml-4 col-11 col-md-10 col-lg-12">Do you agree to the <a href="terms.html">Terms and Conditions</a>?<input type="checkbox" id="agree" name="agree" required></label>
                       <!-- <div class="col-12  justify-content-end"> -->
                       <input type="submit" value="Join!" id="btnSubmit" class="btn btnForm col-12">
                     <!-- </div> -->
