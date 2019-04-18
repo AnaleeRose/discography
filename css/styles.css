@@ -1,28 +1,6 @@
-/*
-Developer: Savannah Skinner
-Table of Contents
-RESETS & MISC - Resets and anything that doesn't fit elsewhere
-SITE WIDE - Styles that apply to all sections
-NAVIGATION - logo, main nav
-MAINCONTENT - Article
-PLACEHOLDER - Placeholder
-MEDIA QUERIES
-Color Palette
-#40b59b - Aqua
-#ff747b - Orange/Pinkish Red
-#f49882 - Mango
-#fad8d4 - Pink
-#f9a733 - Pineapple Gold
-*/
-
-@import "bootstrap.css";
-
+@import "bootstrap.min.css";
 @import "mainStyles.css";
-
 @import url("slideshowXL.css") only screen and (min-width: 1800px);
-
 @import url("slideshowL.css") only screen and (max-width: 1799px) and (min-width: 1000px);
-
 @import url("slideshowM.css") only screen and (max-width: 999px) and (min-width: 500px);
-
 @import url("slideshowS.css") only screen and (max-width: 499px);

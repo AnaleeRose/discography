@@ -16,22 +16,22 @@ Color Palette
 */
 
 
-#slideshow {
-  width: 1800px;
+#slideshow{
+  box-shadow: 1rem 1rem 1rem #763134;
   height: 1125px;
   margin: 0 auto;
   overflow:hidden;
-  box-shadow: 1rem 1rem 1rem #763134;
-}
-  .slideWrapper {
   width: 1800px;
-  height: 1125px;
-  -webkit-animation: slide 25s ease-out infinite;
-  animation: slide 25s ease-out infinite;
-  margin-top: 0;
+}
+  .slideWrapper{
+    animation: slide 25s ease-out infinite;
+    height: 1125px;
+    margin-top: 0;
+    -webkit-animation: slide 25s ease-out infinite;
+    width: 1800px;
   }
 
-  @-webkit-keyframes slide {
+  @keyframes slide{
     0%   {margin-top: 0;}
     10%   {margin-top: 0;}
     30%  {margin-top: -1125px;}
@@ -40,41 +40,30 @@ Color Palette
     90%  {margin-top: -2250px;}
     90%  {margin-top: -2250px;}
     100%  {margin-top: 0px;}
-
   }
 
-  .slideImg {
-    color: rgba(0,0,0,0);
-    margin: 0;
-  }
+  .slideDance{background: url(../imgs/main/twice_dance_XL.jpg) no-repeat;}
 
-  .slideDance {
-        background: url(../imgs/main/twice_dance_XL.png) no-repeat;
-  }
+  .slideLove{background: url(../imgs/main/twice_love_XL.jpg) no-repeat;}
 
-  .slideLove {
-        background: url(../imgs/main/twice_love_XL.png) no-repeat;
-  }
+  .slideCircle{background: url(../imgs/main/twice_circle_XL.jpg) no-repeat;}
 
-  .slideCircle {
-        background: url(../imgs/main/twice_circle_XL.png) no-repeat;
-  }
-
-  .slideImg {
+  .slideImg{
     background-color: #fff;
     background-size: contain;
-    width: 1800px;
     height: 1125px;
+    width: 1800px;
   }
 
 
-.memberCard:before {
-    border-top: 38rem solid #40d8cc;
+.memberCard:before{
     border-right: 40rem solid transparent;
+    border-top: 38rem solid #40d8cc;
   }
 
-  footer a.more {
+  footer a.more{
    display: inline-block;
-   width: 10%;
    margin: 0 45%;
+   width: 10%;
    }
+

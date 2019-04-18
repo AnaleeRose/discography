@@ -3,18 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Twice</title>
-    <meta name="description" content="A student project site on the jpop group Twice.">
+    <meta name="description" content="A student project site on the kpop group Twice.">
     <meta name="author" content="Savannah Skinner">
     <link rel="icon" type="image/ico" href="imgs/logo/twicelogo_black.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One%7CMuli%7CLa+Belle+Aurore" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body id="top">
     <a href="#mainContent" class="hide">Skip to Main Content</a>
-<article class="wrapper">
+<article class="wrapper mx-auto">
     <header class="navHeader">
         <h1>Twice!</h1>
         <nav class="navbar navbar-toggleable-sm">
@@ -22,16 +21,16 @@
             <a class="navbar-brand d-none d-sm-inline-block mb-3 mb-lg-o" href="index.html">
               <img src="imgs/logo/twicelogo.png" alt="Twice logo" style="width: 7rem;">
             </a>
-            <div class="navbar-nav flex-sm-row justify-content-center">
+            <ul class="navbar-nav flex-sm-row justify-content-center">
                 <li class="nav-item current"><a class="nav-link m-1 pr-2 pl-2 active current" href="index.html">Home</a></li>
                 <li class="nav-item "><a class="nav-link m-1 pr-2 pl-2" href="members.html">Members</a></li>
                 <li class="nav-item "><a class="nav-link m-1 pr-2 pl-2" href="albums.html">Albums</a></li>
                 <li class="nav-item "><a class="nav-link m-1 pr-2 pl-2" href="join.html">Newsletter</a></li>
-            </div><!-- navbar-nav -->
+            </ul><!-- navbar-nav -->
           </div><!-- container -->
         </nav>
     </header>
-    <article class="body">
+    <article class="body noBodyGradient">
         <h1 class="hide">Twice!</h1>
         <header class="bodyHeader">
             <div id="slideshow">
@@ -45,19 +44,20 @@
         </header>
 
         <section class="members container-fluid">
+            <div class="memberWrapper">
             <h2>Members</h2>
             <div class="row justify-content-around">
-                <div class="col-10 col-lg-5 mx-auto tinyImgs tinyImgGrid">
-                    <img class="tinyDahyun tinyImg" src="imgs/headshots/dahyun.png" alt="Dahyun">
-                    <img class="tinyMomo tinyImg" src="imgs/headshots/momo.png" alt="Momo">
-                    <img class="tinyMina tinyImg" src="imgs/headshots/mina.png" alt="Mina">
-                    <img class="tinyTzuyu tinyImg" src="imgs/headshots/tzuyu.png" alt="Tzuyu">
-                    <img class="tinyNayeon tinyImg" src="imgs/headshots/nayeon.png" alt="Nayeon">
-                    <img class="tinyJihyo tinyImg" src="imgs/headshots/jihyo.png" alt="Jihyo">
-                    <img class="tinySana tinyImg" src="imgs/headshots/sana.png" alt="Sana">
-                    <img class="tinyChaeyoung tinyImg" src="imgs/headshots/chaeyoung.png" alt="Chaeyoung">
-                    <img class="tinyJeongyeon tinyImg" src="imgs/headshots/jeongyeon.png" alt="Jeongyeon">
-                    <a class="btn joinUs btnMemberGrid seeAll" href="members.html">See all members</a>
+                <div class="col-10 col-lg-5 mx-auto tinyImgs tinyImgGrid" id="hideIE">
+                    <a href="members.html#Dahyun" class="memberA"><p class="hide tinyImgP">Dahyun</p><img class="tinyDahyun tinyImg" src="imgs/headshots/dahyun.jpg" alt="Dahyun"></a>
+                    <a href="members.html#Momo" class="memberA"><p class="hide tinyImgP">Momo</p><img class="tinyMomo tinyImg" src="imgs/headshots/momo.jpg" alt="Momo"></a>
+                    <a href="members.html#Mina" class="memberA"><p class="hide tinyImgP">Mina</p><img class="tinyMina tinyImg" src="imgs/headshots/mina.jpg" alt="Mina"></a>
+                    <a href="members.html#Tzuyu" class="memberA"><p class="hide tinyImgP">Tzuyu</p><img class="tinyTzuyu tinyImg" src="imgs/headshots/tzuyu.jpg" alt="Tzuyu"></a>
+                    <a href="members.html#Nayeon" class="memberA"><p class="hide tinyImgP">Nayeon</p><img class="tinyNayeon tinyImg" src="imgs/headshots/nayeon.jpg" alt="Nayeon"></a>
+                    <a href="members.html#Jihyo" class="memberA"><p class="hide tinyImgP">Jihyo</p><img class="tinyJihyo tinyImg" src="imgs/headshots/jihyo.jpg" alt="Jihyo"></a>
+                    <a href="members.html#Sana" class="memberA"><p class="hide tinyImgP">Sana</p><img class="tinySana tinyImg" src="imgs/headshots/sana.jpg" alt="Sana"></a>
+                    <a href="members.html#Chaeyoung" class="memberA"><p class="hide tinyImgP">Chaeyoung</p><img class="tinyChaeyoung tinyImg" src="imgs/headshots/chaeyoung.jpg" alt="Chaeyoung"></a>
+                    <a href="members.html#Jeongyeon" class="memberA"><p class="hide tinyImgP">Jeongyeon</p><img class="tinyJeongyeon tinyImg" src="imgs/headshots/jeongyeon.jpg" alt="Jeongyeon"></a>
+                    <a class="btn joinUs btnMemberGrid seeAll" href="members.html">Learn More</a>
                 </div><!--Tiny Images-->
 
                 <div class="joinUs col-10 col-lg-4 mt-0 mt-sm-2 mb-5 mb-sm-0 mx-auto offset-2 offset-lg-0 text-center text-lg-left">
@@ -66,21 +66,22 @@
                    <a class="more btn mx-auto mx-lg-0" href="join.html">Join Our Newsletter!</a>
                 </div><!--Join CTA-->
             </div>
+        </div>
         </section>
 
 
         <section class="albums container-fluid">
             <h2>Albums</h2>
             <div class="row gridGap justify-content-around">
-                <div class="albumCard albumPageTwo col-12 col-sm-4 mb-5 mb-sm-0 mx-3 my-4 mx-xl-1">
+                <div class="albumCard albumPageTwo col-12 col-sm-4 mb-5 mb-sm-0 mx-3 my-4 mx-xl-1 dark">
                     <img src="imgs/albumcovers/albumcover_pagetwo.png" alt="Page Two album cover">
                     <h3>Page Two</h3>
-                    <p>Released: April 25, 2016</p>
-                    <p class="smallText">Find it on:</p>
+                    <p class="dark">Released: April 25, 2016</p>
+                    <p class="smallText dark">Find it on:</p>
                     <a class="btnMusic btnApple" href="https://itunes.apple.com/us/album/page-two-ep/1107528987"><span class="hide apple">Apple</span><i class="fab fa-apple"></i> Music</a>
                     <a class="btnMusic btnSpotify" href="https://open.spotify.com/album/7dOZAeST5qCpfpQRAHq9sa"><i class="fab fa-spotify"></i>Spotify</a>
-                    <a class="btnMusic btnTidal" href="https://tidal.com/browse/album/104649698"><img src="imgs/musiclogos/tidal.png">Tidal</a>
-                    <a class="btnMusic btnGoogle" href="https://play.google.com/store/music/artist/TWICE?id=Ae7l2zr5t6gut6htclqul225qwy&hl=en_US"><span class="hide apple">Google Play Music</span><img src="imgs/musiclogos/play.png">Play Music</a>
+                    <a class="btnMusic btnTidal" href="https://tidal.com/browse/album/104649698"><img alt="Tidal logo" src="imgs/musiclogos/tidal.png">Tidal</a>
+                    <a class="btnMusic btnGoogle" href="https://play.google.com/store/music/artist/TWICE?id=Ae7l2zr5t6gut6htclqul225qwy&hl=en_US"><span class="hide apple">Google Play Music</span><img src="imgs/musiclogos/play.png" alt="google play music logo">Play Music</a>
                 </div><!--Page Two Album card-->
 
                 <div class="albumCard albumTwice col-12 col-sm-4 mb-5 mb-sm-0 mx-3 my-4 mx-xl-1">
@@ -90,19 +91,19 @@
                     <p class="smallText">Find it on:</p>
                     <a class="btnMusic btnApple" href="https://itunes.apple.com/us/album/twice-ep/1242966871"><span class="hide">Apple</span><i class="fab fa-apple"></i> Music</a>
                     <a class="btnMusic btnSpotify" href="https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"><i class="fab fa-spotify"></i>Spotify</a>
-                    <a class="btnMusic btnTidal" href="https://tidal.com/browse/album/74540580"><img src="imgs/musiclogos/tidal.png">Tidal</a>
-                    <a class="btnMusic btnGoogle" href="https://play.google.com/store/music/album/TWICE?id=Bg2vywwke4teuutui32cwrjtfua&hl=en_US"><span class="hide apple">Google Play Music</span><img src="imgs/musiclogos/play.png">Play Music</a>
+                    <a class="btnMusic btnTidal" href="https://tidal.com/browse/album/74540580"><img src="imgs/musiclogos/tidal.png" alt="tidal logo">Tidal</a>
+                    <a class="btnMusic btnGoogle" href="https://play.google.com/store/music/album/TWICE?id=Bg2vywwke4teuutui32cwrjtfua&hl=en_US"><span class="hide apple">Google Play Music</span><img src="imgs/musiclogos/play.png" alt="google play music logo">Play Music</a>
                 </div><!--#Twice Album card-->
 
-                <div class="albumCard albumTwicetagram col-12 col-sm-4 mb-5 mb-sm-0 my-4 mx-xl-1">
+                <div class="albumCard albumTwicetagram col-12 col-sm-4 mb-5 mb-sm-0 my-4 mx-xl-1 dark">
                     <img src="imgs/albumcovers/albumcover_twicetagram.png" alt="Twicetagram album cover">
                     <h3>Twicetagram</h3>
-                    <p>Released: October 30, 2017</p>
-                    <p class="smallText">Find it on:</p>
+                    <p class="dark">Released: October 30, 2017</p>
+                    <p class="smallText dark">Find it on:</p>
                     <a class="btnMusic btnApple" href="https://itunes.apple.com/us/album/twicetagram/1303321512"><span class="hide">Apple</span><i class="fab fa-apple"></i> Music</a>
                     <a class="btnMusic btnSpotify" href="https://open.spotify.com/album/7dOZAeST5qCpfpQRAHq9sa"><i class="fab fa-spotify"></i>Spotify</a>
-                    <a class="btnMusic btnTidal" href="https://tidal.com/browse/album/81444134"><img src="imgs/musiclogos/tidal.png">Tidal</a>
-                    <a class="btnMusic btnGoogle" href="https://play.google.com/store/music/album/twicetagram?id=Byffvnkcfdxpx4li6yrxucogya4&hl=en_US"><span class="hide apple">Google Play Music</span><img src="imgs/musiclogos/play.png">Play Music</a>
+                    <a class="btnMusic btnTidal" href="https://tidal.com/browse/album/81444134"><img src="imgs/musiclogos/tidal.png" alt="tidal logo">Tidal</a>
+                    <a class="btnMusic btnGoogle" href="https://play.google.com/store/music/album/twicetagram?id=Byffvnkcfdxpx4li6yrxucogya4&hl=en_US"><span class="hide apple">Google Play Music</span><img src="imgs/musiclogos/play.png" alt="google play music logo">Play Music</a>
                 </div><!--Twicetagram Album card-->
             </div>
             <a class="btn allAlbums seeAll mx-auto py-3" href="albums">See all albums</a>
