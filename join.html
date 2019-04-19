@@ -35,7 +35,7 @@
         <section class="form mx-auto">
             <div class="container-fluid mx-auto p-0">
               <h2>Get the Latest Twice Updates!</h2>
-               <form action="#" class="form-horizontal row mx-auto justify-content-md-center" id="join" method="post">
+               <form action="confirm.html" class="form-horizontal row mx-auto justify-content-center justify-content-lg-end" id="join" method="post">
                 <h3 class="text-center text-sm-left col-11 pl-4">About You:</h3>
                     <fieldset class="name row col-12 col-md-6 col-lg-5">
                      <div class="form-group col-12">
@@ -53,7 +53,7 @@
                     </div>
                 </fieldset>
 
-                <fieldset class="bDay row col-12 col-md-5 justify-content-left offset-lg-1">
+                <fieldset class="bDay row col-12 col-md-5 justify-content-left offset-lg-1" >
                     <legend class="col-12 ml-3">Birthday:</legend>
                     <div class="form-group col-12">
                         <label for="month" class="control-label col-12 hide">month</label>
@@ -214,6 +214,9 @@
                         <div class="col-12">
                             <input type="email" class="form-control" id="email" name="email" required><small class="form-text text-muted helpText">This is a required field.</small>
                         </div>
+                        <div class="col-12 prefer"><p class="joinText">Do you prefer HTML or plain text?</p>
+                        <label class="radio-inline"><input type="radio" name="optradio" checked> HTML</label>
+                        <label class="radio-inline"><input type="radio" name="optradio"> Plain Text</label></div>
                     </div>
                     <h3 class="text-center text-sm-left col-12">Comments?</h3>
                     <div class="form-group col-12">
@@ -223,9 +226,9 @@
                         </div>
                     </div>
 
-                    <label for="agree" class="ml-4 col-11 col-md-10 col-lg-12">Do you agree to the <a href="terms.html">Terms and Conditions</a>?<input type="checkbox" id="agree" name="agree" required></label>
-                      <!-- <div class="col-12  justify-content-end"> -->
-                      <input type="submit" value="Join!" id="btnSubmit" class="btn btnForm col-12">
+                    <label for="agree" class="ml-4 col-11 col-md-10 col-lg-11 joinText">Do you agree to the <a href="terms.html">Terms and Conditions</a>?<input type="checkbox" id="agree" name="agree" required=""></label>
+
+                    <input type="submit" value="Join!" id="btnSubmit" name="agree" class="btn btnForm col-12">
                     <!-- </div> -->
 
                 </fieldset>
@@ -237,9 +240,16 @@
         <footer class="footer">
             <h3 class="footerH3">Want to know more about the Twice members?</h3>
             <a class="more btn" href="members.html">See All Members</a>
+            <p class="mx-auto sources">This is for educational purposes only, <a href="terms.html">sources can be found here</a></p>
         </footer>
         <a href="#top"><i class="fab fa-gratipay"></i></a>
     </article>
 </article>
+<script>
+  $(() => $('#join').submit(event => {
+    event.preventDefault();
+    alert('Form is valid!');
+  }));
+</script>
 </body>
 </html>

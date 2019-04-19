@@ -397,6 +397,7 @@ body{
   background-size: 100px 100px;
   margin: 0 auto;
   min-width: 320px;
+  position: relative;
   width: 100%;
 }
 
@@ -426,7 +427,7 @@ h1{
   color: #ffcf59;
   font-size: 325%;
   margin: 0;
-  text-shadow: 4px 4px 1px rgba(255, 116, 123, 1), 8px 8px 1px rgba(64, 181, 155, .8);
+  text-shadow: 4px 4px 1px rgba(255, 116, 123, 1), 8px 8px 1px rgb(57, 195, 126, .8);;
 }
 
 h2, footer h3{
@@ -624,7 +625,7 @@ padding-top: 1rem;
 .form{padding-bottom: 2rem;}
 
 .albums{
-  background: rgba(250, 216, 212, .87);
+  background: rgba(250, 216, 212, .9);
   padding-bottom: 3rem;
 }
 
@@ -877,7 +878,7 @@ footer{
 footer a.more{
   color: #a26a19;;
   display: inline-block;
-  margin: 0 27.5%;
+  margin: 0 27.5% 3rem;
   width: 45%;
 }
   a.more:active{color: #fff;}
@@ -897,13 +898,35 @@ a[href="#top"] i{
 
   a[href="#top"] i:hover{opacity: 1;}
 
+/*Confirm/Success
+---------------------------------->*/
+
+.success.wrapper {min-height: 100vh;}
+
+.success .row p:last-of-type {
+  margin-bottom: 10rem;
+}
+
+.success .body {background: linear-gradient(to bottom, rgba(250,216,212,0) 1%,rgb(250, 216, 212) 17%,rgba(250,216,212,.9) 51%, rgba(249,236,234,.7) 80%,rgba(249,236,234,0) 100%)}
+
+.success .footer {background: linear-gradient(to bottom, rgba(255, 179, 170, 1), rgba(255, 179, 170, 0));}
+
+.success p {color: #e96056}
+
+
 /*------------------------------------------->
 ------------------------------------------->
 Forms
 ------------------------------------------->
 --------------------------------------------->*/
 
+legend{font-size: 1rem;}
+
+label,legend{color: #724c1a;}
+
 .form{max-width: 1500px;}
+
+.form h3{color: #a12828;}
 
 input.form-control, select, textarea{min-width: 15rem;}
 
@@ -913,12 +936,15 @@ input, .form-control, select, textarea{background: #fff9f4;}
 
 input[type="checkbox"]{margin-left: .6rem;}
 
+
+input:valid, input[type="submit"]:valid{border: 2px solid #71c671;}
 #btnSubmit{
     background: linear-gradient(-45deg, rgba(237,235,160,1) 0%,rgba(227,245,171,1) 38%,rgba(160,226,140,1) 100%);
     border: 2px solid #21ae21;
     color: #2e9938;
     margin-right: 2rem;
-    min-width: 5rem;
+    width: 5rem;
+    max-width: 5.5rem;
     }
 
     #btnSubmit:hover{
@@ -926,29 +952,36 @@ input[type="checkbox"]{margin-left: .6rem;}
       border-color: #b7e68d;
     }
 
-legend{font-size: 1rem;}
 
+#join {max-width: 98%}
+.addressForm .form-group:nth-of-type(3) input, .addressForm .form-group:last-of-type input{width: 8rem;}
 #comments{
   max-height: 13rem;
   min-height: 10rem;
 }
 
-.addressForm .form-group:nth-of-type(3) input, .addressForm .form-group:last-of-type input{width: 8rem;}
-
-input:valid, input[type="submit"]:valid{border: 2px solid #71c671;}
-
-.form h3{color: #a12828;}
 
 .test{
   width: 15rem;
   text-align: center;
 }
 
-label,legend{color: #724c1a;}
 
-label[for="agree"], label[for="agree"] a{
+.joinText, .joinText a{
   font-style: italic;
   font-size: 90%;
+  margin-bottom: 0;
+}
+
+.prefer>.joinText {
+  color: #724c1a;
+  display: inline-block;
+  text-shadow: none;
+}
+
+.radio-inline {
+  font-size: 90%;
+  margin-left: .7rem;
 }
 
 .helpText{white-space: nowrap;}
@@ -957,6 +990,7 @@ label[for="agree"], label[for="agree"] a{
   margin-left: 70%;
   width: 8%;
 }
+
 
 /*Terms
 --------------------------------------------->*/
@@ -973,6 +1007,22 @@ label[for="agree"], label[for="agree"] a{
 .terms h4, .terms h3:not(.footerH3){font-size: 125%;}
 .body.terms {padding-bottom: 2rem;}
 
+.terms h3.dontBother {
+  color: #a52a2a;
+  font-size: 175%;
+}
+
+.dontBother i {margin-right: .7rem}
+
+.sources {
+  color: #ff9841;
+  font-size: 85%;
+  position: absolute;
+  left: 1%;
+  bottom: 0;
+  z-index: 500;
+}
+
 
 /*---------------------------------------------------------------->
 ---------------------------------------------------------------->
@@ -980,10 +1030,12 @@ Media Queries
 ---------------------------------------------------------------->
 ------------------------------------------------------------------>*/
 
+
+
 @media screen and (min-width: 570px){
   .body {padding-top: 13rem;}
   .navHeader{
-    background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,rgba(255,255,255,0.8) 73%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,rgba(255,255,255,0.8) 40%,rgba(255,255,255,0) 100%);
     left: 0;
     position: fixed;
     right: 0;
@@ -1029,6 +1081,8 @@ Media Queries
     right: 2%;
   }
   #comments{height: 12rem;}
+
+  #join {max-width: 96%}
 }
 
 
