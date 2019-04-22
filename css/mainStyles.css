@@ -457,7 +457,7 @@ Navigation
 
 .navHeader{
   background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,rgba(255,255,255,0.8) 73%,rgba(250,216,212,0.2) 100%);
-  padding-bottom: 3rem;
+/*  padding-bottom: 3rem;*/
 }
 
 .navHeader img{max-width: 10rem;}
@@ -672,7 +672,7 @@ a.seeAll{
 ---------------------------------->*/
 
 .memberCard{
-  background: linear-gradient(135deg, #e24b46 1%,#f49882 98%);
+  background: linear-gradient(135deg, rgba(64,216,204,1) 0%,rgba(64,216,204,1) 49%,rgba(173,67,67,1) 49%,rgba(226,75,70,1) 53%,rgba(244,152,130,1) 96%,rgba(244,152,130,1) 99%);
   box-shadow: 1rem 1rem 1rem #763134;
   min-width: 18rem;
   overflow: hidden;
@@ -681,19 +681,7 @@ a.seeAll{
   z-index: 1;
 }
 
-.memberCard:nth-of-type(even){background: linear-gradient(135deg, #843542 0%,#ff747b 100%);}
-
-.memberCard:before{
-    border-right: 100vw solid transparent;
-    border-top: 50vh solid #40d8cc;
-    content: " ";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
-    z-index: 1;
-  }
+.memberCard:nth-of-type(even){background: linear-gradient(135deg, rgba(64,216,204,1) 0%,rgba(64,216,204,1) 49%,rgba(102,38,67,1) 49%,rgba(132,53,66,1) 53%,rgba(255,116,123,1) 99%);}
 
   .memberCard img{
     background: rgba(255,255,255,1);
@@ -882,8 +870,8 @@ footer{
 footer a.more{
   color: #a26a19;;
   display: inline-block;
-  margin: 0 27.5% 3rem;
-  width: 45%;
+  margin-bottom: 3rem;
+  width: 15rem;
 }
   a.more:active{color: #fff;}
 

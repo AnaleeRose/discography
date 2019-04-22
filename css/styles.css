@@ -1,6 +1,2 @@
 @import "bootstrap.min.css";
-@import "mainStyles.css";
-@import url("slideshowXL.css") only screen and (min-width: 1800px);
-@import url("slideshowL.css") only screen and (max-width: 1799px) and (min-width: 1000px);
-@import url("slideshowM.css") only screen and (max-width: 999px) and (min-width: 500px);
-@import url("slideshowS.css") only screen and (max-width: 499px);
+@import "mainStyles_mini.css";
