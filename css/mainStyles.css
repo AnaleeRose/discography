@@ -828,7 +828,10 @@ a.seeAll{
 /*Slideshow Basics - find specifics in the individual slideshow sheets, sorted by size
 ------------------------------------------------------------------------------------------------------>*/
 
-.bodyHeader{ background: linear-gradient(to bottom, rgba(250,216,212,0) 1%,rgba(250,216,212,1) 17%,rgba(250,216,212,1) 51%,rgba(249,231,228,1) 87%,rgba(249,236,234,0.1) 99%,rgba(249,236,234,0.1) 100%);}
+.bodyHeader{
+  background: linear-gradient(to bottom, rgba(250,216,212,0) 1%,rgba(250,216,212,1) 17%,rgba(250,216,212,1) 51%,rgba(249,231,228,1) 87%,rgba(249,236,234,0.1) 99%,rgba(249,236,234,0.1) 100%);
+  max-width: 2000px;
+}
 
   .bodyHeader:before{background: #fad8d4; width: 100vw; height: 100px;}
 
