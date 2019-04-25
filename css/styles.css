@@ -1,3 +1,4 @@
 @import "bootstrap.min.css";
-@import "mainStyles_mini.css";
-@import "IEstyles.css" only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+@import "mainStyles.css";
+/*@import "mainStyles_mini.css";*/
+@import "IEstyles.css" only screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
