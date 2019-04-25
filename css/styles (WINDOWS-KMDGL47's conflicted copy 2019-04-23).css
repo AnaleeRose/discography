@@ -1,0 +1,7 @@
+@import "bootstrap.min.css";
+@import "mainStyles_mini.css";
+@import url("slideshowXL_mini.css") only screen and (min-width: 1800px);
+@import url("slideshowL_mini.css") only screen and (max-width: 1799px) and (min-width: 1000px);
+@import url("slideshowM_mini.css") only screen and (max-width: 999px) and (min-width: 500px);
+@import url("slideshowS_mini.css") only screen and (max-width: 499px);
+@import url("IEstyles.css") only screen and (-ms-high-contrast: active), (-ms-high-contrast: none);

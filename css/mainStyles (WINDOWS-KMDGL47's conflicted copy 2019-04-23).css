@@ -457,7 +457,7 @@ Navigation
 
 .navHeader{
   background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,rgba(255,255,255,0.8) 73%,rgba(250,216,212,0.2) 100%);
-/*  padding-bottom: 3rem;*/
+  padding-bottom: 3rem;
 }
 
 .navHeader img{max-width: 10rem;}
@@ -590,7 +590,7 @@ img{
 
 .tinyImgs p{
   bottom: .5rem;
-  color: #ffe5ae;
+  color: #fff;
   height:1.2rem;
   left: .5rem;
   position: absolute;
@@ -672,7 +672,7 @@ a.seeAll{
 ---------------------------------->*/
 
 .memberCard{
-  background: linear-gradient(135deg, rgba(64,216,204,1) 0%,rgba(64,216,204,1) 49%,rgba(173,67,67,1) 49%,rgba(226,75,70,1) 53%,rgba(244,152,130,1) 96%,rgba(244,152,130,1) 99%);
+  background: linear-gradient(135deg, #e24b46 1%,#f49882 98%);
   box-shadow: 1rem 1rem 1rem #763134;
   min-width: 18rem;
   overflow: hidden;
@@ -681,7 +681,19 @@ a.seeAll{
   z-index: 1;
 }
 
-.memberCard:nth-of-type(even){background: linear-gradient(135deg, rgba(64,216,204,1) 0%,rgba(64,216,204,1) 49%,rgba(102,38,67,1) 49%,rgba(132,53,66,1) 53%,rgba(255,116,123,1) 99%);}
+.memberCard:nth-of-type(even){background: linear-gradient(135deg, #843542 0%,#ff747b 100%);}
+
+.memberCard:before{
+    border-right: 100vw solid transparent;
+    border-top: 50vh solid #40d8cc;
+    content: " ";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 1;
+  }
 
   .memberCard img{
     background: rgba(255,255,255,1);
@@ -828,10 +840,7 @@ a.seeAll{
 /*Slideshow Basics - find specifics in the individual slideshow sheets, sorted by size
 ------------------------------------------------------------------------------------------------------>*/
 
-.bodyHeader{
-  background: linear-gradient(to bottom, rgba(250,216,212,0) 1%,rgba(250,216,212,1) 17%,rgba(250,216,212,1) 51%,rgba(249,231,228,1) 87%,rgba(249,236,234,0.1) 99%,rgba(249,236,234,0.1) 100%);
-  max-width: 2000px;
-}
+.bodyHeader{ background: linear-gradient(to bottom, rgba(250,216,212,0) 1%,rgba(250,216,212,1) 17%,rgba(250,216,212,1) 51%,rgba(249,231,228,1) 87%,rgba(249,236,234,0.1) 99%,rgba(249,236,234,0.1) 100%);}
 
   .bodyHeader:before{background: #fad8d4; width: 100vw; height: 100px;}
 
@@ -873,8 +882,8 @@ footer{
 footer a.more{
   color: #a26a19;;
   display: inline-block;
-  margin-bottom: 3rem;
-  width: 15rem;
+  margin: 0 27.5% 3rem;
+  width: 45%;
 }
   a.more:active{color: #fff;}
 
@@ -921,7 +930,7 @@ label,legend{color: #724c1a;}
 
 .form{max-width: 1500px;}
 
-.form h3{color: #a12828;}
+.form h3{color: #a15628;}
 
 input.form-control, select, textarea{min-width: 15rem;}
 
@@ -1024,40 +1033,6 @@ input:valid, input[type="submit"]:valid{border: 2px solid #71c671;}
 Media Queries
 ---------------------------------------------------------------->
 ------------------------------------------------------------------>*/
-
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-
-  .hideIE {
-    display: none;
-  }
-
-  .contentH {display: none}
-
-  .contentH2:before {
-    content:'Newsletter';
-  }
-
-  .joinUs .footerH3 {padding-top: 0}
-
-  #tinyImgsIE{
-    background: url(../imgs/headshots/headshots.png) no-repeat;
-    background-size: contain;
-    color: rgba(0,0,0,0);
-    display: block;
-    height: 300px;
-    margin: 0 1%;
-    max-width: 450px;
-    /*width: 98%;*/
-    text-align: center;
-  }
-
-    #tinyImgsIE:before {border:none;}
-
-    #tinyImgsIE:hover {background-image: url(../imgs/headshots/headshots_hover.png);}
-
-}
-
 
 @media screen and (min-width: 570px){
   .body {padding-top: 13rem;}
