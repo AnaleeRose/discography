@@ -372,14 +372,7 @@ a:focus {
 .floatRight {float: right;}
 .floatLeft {float: left;}
 
-a {text-decoration: none}
-  a:link {text-decoration: none}
-
-  a:visited {text-decoration: none}
-
-  a:hover {text-decoration: none}
-
-  a:active {text-decoration: none}
+a, a:link, a:visited, a:hover, a:active{text-decoration: none}
 
 /*------------------------------------------->
 ------------------------------------------->
@@ -419,9 +412,9 @@ p, a, .light{
   text-shadow: 1px 1px 1px rgba(255,255,255, .5);
 }
 
-h1,h2,h3,h4,h5,h6, .nav-item a{font: 175% 'Fugaz One', cursive;}
+body h1,body h2,body h3,body h4,body h5,body h6, .nav-item a{font: 175% 'Fugaz One', cursive;}
 
-h1,h2,h3,h4,h5,h6{text-align: center;}
+body h1,body h2,body h3,body h4,body h5,body h6{text-align: center;}
 
 h1{
   color: #ffcf59;
