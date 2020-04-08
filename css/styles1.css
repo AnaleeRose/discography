@@ -22,9 +22,13 @@
     text-align:center;
     color:green;
   }
+  h3{
+    text-align: center;
+  }
   p{
     font: 150% Muli, sans-serif;
     color:#008000;
+    text-align:center;
   }
  
 .hide{
@@ -54,7 +58,6 @@ background-position:100% 50%;
 background-position: 0% 50%;
 }
 }
-
 .navHeader img {
     max-width: 10rem;
 }
@@ -172,10 +175,6 @@ background-position: 0% 50%;
   background: url(../imgs/gold.jpg);
   padding:2rem;
 }
-/*.gridGap{
-  display:grid;
-  grid-template-columns: repeat(3,4fr); 
-}*/
 .albumCard img{
   width:20rem;
 }
@@ -190,13 +189,35 @@ background-position: 0% 50%;
   width: 100%;
 }
 .albumPageTwo{
-  background: red;
+  border-radius:1rem;
+  background-image: linear-gradient(to right top, #7fffd4, #03eee7, #00d9f9, #00c1ff, #00a6ff);
+  transform: skew(5deg);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 3rem solid red;
+  border-bottom: 3rem solid red;
 }
 .allAlbums{
   display:grid;
-  margin-top:1em;
+  margin-top:1rem;
 }
+.btnApple i{
+  font-size: 125%;
 
+}
+.btnMusic {
+  color: #000;
+  margin: .3rem auto;
+  display: block;
+  padding: .6rem;
+  text-align: center
+}
+.btnTidal img {
+  width: 2.5rem;
+}
+.btnGoogle img{
+  width:2.5rem;
+}
   @media screen and (min-width:992px) {
     .navHeader h1{
       display:none;
@@ -207,6 +228,5 @@ background-position: 0% 50%;
       width:655px;
     }
   }
-
-
+  
 

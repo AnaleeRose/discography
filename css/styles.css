@@ -724,6 +724,16 @@ a.seeAll {
     content: " ";
     background: url(../imgs/musiclogos/play.pngs)
 }
+.btnGoogle img {
+    width: 1.7rem.albumCard{
+  width:25rem;
+}
+}
+
+.btnGoogle:before {
+    content: " ";
+    background: url(../imgs/musiclogos/play.pngs)
+}
 
 .btnSpotify:link {
     background: #000;
