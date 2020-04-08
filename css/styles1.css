@@ -168,6 +168,35 @@ background-position: 0% 50%;
   margin-top:6rem;
   margin-bottom:2rem;
 }
+.albums {
+  background: url(../imgs/gold.jpg);
+  padding:2rem;
+}
+/*.gridGap{
+  display:grid;
+  grid-template-columns: repeat(3,4fr); 
+}*/
+.albumCard img{
+  width:20rem;
+}
+.albumCard{
+  background-color:pink;
+}
+.albumCard {
+  overflow: hidden;
+  padding: 0 0 1rem;
+  position: relative;
+  max-width: 20rem;
+  width: 100%;
+}
+.albumPageTwo{
+  background: red;
+}
+.allAlbums{
+  display:grid;
+  margin-top:1em;
+}
+
   @media screen and (min-width:992px) {
     .navHeader h1{
       display:none;

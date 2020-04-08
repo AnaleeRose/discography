@@ -681,7 +681,7 @@ a.seeAll {
 }
 
 .btnMusic {
-    border-radius: 15px;
+    border-radiu.btns: 15px;
     color: #000;
     margin: .3rem auto;
     display: block;
@@ -715,7 +715,9 @@ a.seeAll {
 }
 
 .btnGoogle img {
-    width: 1.7rem
+    width: 1.7rem.albumCard{
+  width:25rem;
+}
 }
 
 .btnGoogle:before {
