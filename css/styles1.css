@@ -30,6 +30,13 @@
     color:#008000;
     text-align:center;
   }
+  a,
+ a:link,
+ a:visited,
+a:hover,
+a:active {
+    text-decoration: none
+}  
  
 .hide{
   display:none;
@@ -173,13 +180,10 @@ background-position: 0% 50%;
 }
 .albums {
   background: url(../imgs/gold.jpg);
-  padding:2rem;
+  padding:4rem;
 }
 .albumCard img{
   width:20rem;
-}
-.albumCard{
-  background-color:pink;
 }
 .albumCard {
   overflow: hidden;
@@ -188,35 +192,110 @@ background-position: 0% 50%;
   max-width: 20rem;
   width: 100%;
 }
+.albumCard p{
+  font:80% 'Fugaz One', cursive;
+}
 .albumPageTwo{
   border-radius:1rem;
   background-image: linear-gradient(to right top, #7fffd4, #03eee7, #00d9f9, #00c1ff, #00a6ff);
   transform: skew(5deg);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
-  border-top: 3rem solid red;
-  border-bottom: 3rem solid red;
+  border-top: 1.5rem solid #FF0000;
+  border-bottom: 1.5rem solid #FF0000;
 }
-.allAlbums{
-  display:grid;
-  margin-top:1rem;
+.albumTwice{
+  border-radius:1rem;
+  background-image: linear-gradient(to right top, #e6b1e4, #eabdea, #efc9ef, #f3d5f4, #f8e1f9);
+  transform: skew(5deg);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid #808000;
+  border-bottom: 1.5rem solid #808000;
 }
-.btnApple i{
-  font-size: 125%;
-
+.albumTwicetagram{
+  border-radius:1rem;
+  background-image: linear-gradient(to right top, #f5d145, #f3dd75, #f2e8a1, #f4f1cb, #f9f9f4);
+  transform: skew(5deg);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid #C0C0C0;
+  border-bottom: 1.5rem solid #C0C0C0;
 }
 .btnMusic {
-  color: #000;
   margin: .3rem auto;
   display: block;
   padding: .6rem;
-  text-align: center
+  text-align: center;
+  font-size:100%;
+  text-transform:capitalize;
+  border:2px white inset;
+  border-radius:0.5rem;
+  box-shadow: 0.2rem 0.2rem #808080;
+}
+.btnApple{
+  background:#cdcdcd;
+  width:50%;
+  color:white;
+  transition: all .2s ease-in-out;
+}
+.btnApple:hover,.btnSpotify:hover,.btnTidal:hover,.btnGoogle:hover{
+  transform: scale(1.1);
+  background-image: linear-gradient(to right top, #e19483, #d6849a, #b37eb2, #7a80bd, #2180b3);
+  color:#008000;
+}
+
+.btnApple i{
+  font-size: 125%;
+  color:#FFFFFF;
+}
+.btnSpotify{
+  background:#32CD32;
+  width:50%;
+  color:#FFFFFF;
+}
+.btnSpotify i {
+  background: #000000;
+  border-radius: 50%;
+  color:#008000;
+  font-weight: 400;
+  margin-right: .5rem
 }
 .btnTidal img {
   width: 2.5rem;
 }
+.btnTidal{
+  background: #000000;
+  width:50%;
+  color:white;
+}
 .btnGoogle img{
   width:2.5rem;
+}
+.btnGoogle{
+  background:#FFA63D;
+  width:60%;
+  color:#FFFFFF;
+}
+.allAlbums{
+display:flex;
+justify-content:space-evenly;
+text-transform: capitalize;
+margin-top:3rem;
+}
+footer {
+  padding: 1.5rem 0 5rem;
+  position: relative
+}
+.sources {
+  color: #008000;
+  font-size: 85%;
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+}
+.sources a{
+  color:red;
 }
   @media screen and (min-width:992px) {
     .navHeader h1{
