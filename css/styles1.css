@@ -302,10 +302,31 @@ footer {
       display:none;
     }
   }
-  @media only screen and (max-width: 767px){
-    .carousel-inner{
-      width:655px;
+  @media only screen and (max-width: 767px) {
+    .wrapper {
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden
     }
+    .carousel-inner{
+      height:25rem;
+    }
+    .carousel-item {
+      width:70%;
+      height:40%;
+    }
+      .tinyImg{
+    max-width:4rem;
+   }
   }
+  
+/*@import "mainStyles.css";*/
+
+
+/*@import "mainStyles_mini.css";*/
+
+@import "IEstyles.css" only screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
   
 
