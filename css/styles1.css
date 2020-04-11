@@ -42,9 +42,9 @@ a:active {
   display:none;
 }
 .btn{
-width:18rem;
+width:15rem;
 height:5rem;
-font-size:1.5rem;
+font-size:1.1rem;
 text-align:center;
 line-height :5rem;
 color :rgba(255,255,255,0.9);
@@ -52,6 +52,9 @@ border-radius:3.125rem;
 background :linear-gradient(-45deg, #FFA63D, #FF3D77, #338AFF, #3CF0C5);
 background-size :600%;
 animation :anime 16s linear infinite;
+}
+.btn:hover{
+  color:#008000;
 }
 
 @keyframes anime {
@@ -133,7 +136,7 @@ background-position: 0% 50%;
     height:40%;
 	}
 	.carousel-item img {
-		animation:drift 10s linear infinite;/*short hand*/
+		animation:drift 5s linear infinite;/*short hand*/
   }		
 	@keyframes drift{
 		from{transform:translateX(60px);}
@@ -146,11 +149,13 @@ background-position: 0% 50%;
   .tinyImgGrid{
     margin-top:1rem;
     display:grid;
-    grid-template-columns:4fr 4fr 4fr;
     grid-column-gap:2rem;
-    grid-row-gap:.7rem;
-    /*background:url(../imgs/bg1.jpg);*/
+    grid-row-gap:2rem;
     padding:2rem;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(4, 140px);
+    justify-content: center;
+    padding:4rem;
   }
   .tinyImg {
     max-width:10rem;
@@ -160,23 +165,44 @@ background-position: 0% 50%;
      border-radius: 50px 20px 30px;
      transform: rotate(-30deg) translateY(40px);
   }
+  #tinyImgsIE{
+    display:none;
+  }
 .tinyImg:hover,
 .tinyImg.hover {
   -webkit-transform: translateX(130px);
   transform: translateX(130px);
 }
-#tinyImgsIE{
-  display:none;
-}
 .btnMemberGrid{
-  grid-column:2;
-  width:10rem;
+  grid-column: 1/4;
   margin-top:4rem;
-  margin-bottom:1rem;
 }
 .footerH3{
   margin-top:6rem;
   margin-bottom:2rem;
+}
+
+.joinUs p{
+  position: relative;
+	background: #E8B923;
+	border-radius: .4em;
+  padding:2rem;
+  margin-bottom:3rem;;
+	
+}
+.joinUs p:after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #E8B923;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
 }
 .albums {
   background: url(../imgs/gold.jpg);
@@ -283,6 +309,11 @@ justify-content:space-evenly;
 text-transform: capitalize;
 margin-top:3rem;
 }
+a.seeAll{
+  width:12rem;
+  line-height:3rem;
+  padding:1rem;
+}
 footer {
   padding: 1.5rem 0 5rem;
   position: relative
@@ -309,6 +340,9 @@ footer {
     padding:0;
     overflow-x:hidden
     }
+    .navHeader h1{
+      display:none;
+    }
     .carousel-inner{
       height:25rem;
     }
@@ -316,17 +350,53 @@ footer {
       width:70%;
       height:40%;
     }
-      .tinyImg{
-    max-width:4rem;
-   }
+    .tinyImgGrid{
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(4, auto);
+    }
+    .tinyImg{
+      max-width:7rem;
+      margin-left:-2rem;
+    } 
+    .footerH3 {
+      margin-top:1rem;
+    }
+    .joinUs p{
+      margin-left:1rem;
+    }
   }
-  
-/*@import "mainStyles.css";*/
+    @media screen and (device-aspect-ratio: 40/71){
+      .tinyImg{
+        max-width:5.0rem;
 
+      } 
+    }
+    @media only screen and (device-width:360px){
+      .tinyImg{
+        max-width:5.5rem;
 
-/*@import "mainStyles_mini.css";*/
+      } 
+    }
+    @media screen and (-ms-high-contrast: active), 
+    (-ms-high-contrast: none) {
+           a.seeAll{
+             padding:2rem;
+           }
+           a.btnMemberGrid{
+             line-height:1.5rem;
+           }
+      }
+   /* Microsoft Edge Browser 15+ - @supports method */
 
-@import "IEstyles.css" only screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none)
+   @supports (-ms-ime-align:auto)
+   and (-webkit-text-stroke:initial) {
+   a.seeAll { 
+  padding:2rem; 
+  } 
+  a.btnMemberGrid{
+    line-height:1.5rem;
+  }
+}
+
   
 
