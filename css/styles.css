@@ -528,8 +528,7 @@ img{
 }
 
 #form footer,
-.terms 
- {
+.terms footer {
     border-top: 1rem solid rgba(255, 255, 255, .7);
     padding-top: 1rem
 }

@@ -1,1 +1,12 @@
- .hideIE {display: none;}.contentH {display: none}.contentH2:before {content:'Newsletter';}.joinUs .footerH3 {padding-top: 0}#tinyImgsIE{background: url(../imgs/headshots/headshots.png) no-repeat;background-size: contain;color: rgba(0,0,0,0);display: block;max-width: 450px;text-align: center;}#tinyImgsIE:before {border:none;}#tinyImgsIE:hover {background-image: url(../imgs/headshots/headshots_hover.png);}.slideWrapper{animation: none;}
+ .hideIE {display: none;}
+ .contentH {display: none}
+ .contentH2:before {content:'Newsletter';}
+ .joinUs .footerH3 {padding-top: 0}
+ #tinyImgsIE{background: url(../imgs/headshots/headshots.png) no-repeat;
+    background-size: contain;
+    color: rgba(0,0,0,0);
+    display: block;
+    max-width: 450px;
+    text-align: center;}
+    #tinyImgsIE:before {border:none;}
+    #tinyImgsIE:hover {background-image: url(../imgs/headshots/headshots_hover.png);}.slideWrapper{animation: none;}
