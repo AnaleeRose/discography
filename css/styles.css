@@ -719,7 +719,6 @@ a.seeAll {
   width:25rem;
 }
 }
-
 .btnGoogle:before {
     content: " ";
     background: url(../imgs/musiclogos/play.pngs)

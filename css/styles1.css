@@ -20,8 +20,10 @@
   margin:0;
   }
   h2{
-    text-align:center;
-    color:green;
+  text-align:center;
+  color: #008000;
+  background: #FFFFFF;
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
   }
   h3{
     text-align: center;
@@ -182,7 +184,8 @@ background-position: 0% 50%;
 	background: #E8B923;
 	border-radius: .4em;
   padding:2rem;
-  margin-bottom:3rem;;	
+  margin-bottom:3rem;
+  color:#FFFFFF;	
 }
 .joinUs p:after {
   content: '';
@@ -198,22 +201,46 @@ background-position: 0% 50%;
 	margin-left: -10px;
 	margin-bottom: -20px;
 }
-.albums {
+.albums,.albumCards {
   background: url(../imgs/gold.jpg);
-  padding:4rem;
+ padding:4rem;
 }
 .albumCard img{
-  width:20rem;
+  max-width:20rem;
 }
 .albumCard {
   overflow: hidden;
   padding: 0 0 1rem;
   position: relative;
   max-width: 20rem;
+  min-width:18rem;
   width: 100%;
 }
+.albumCard h3{
+  font-size:100%;
+  margin-top: 1rem;
+  text-decoration: underline;
+  letter-spacing: 0.2rem;
+ background: #333333;
+ text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+ background: #333333;
+ color:#FFFFFF;
+}
+.albumCoaster h3{
+  font-size:85%;
+}
 .albumCard p{
-  font:80% 'Fugaz One', cursive;
+  font:90% 'Fugaz One', cursive;
+  color:	#FF00FF;
+}
+.albumCard h4{
+text-align: center;
+color: #FFFFFF;
+background: #333333;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+color: #FFFFFF;
+background: #333333;
+text-decoration: underline;
 }
 .albumPageTwo{
   border-radius:1rem;
@@ -235,12 +262,41 @@ background-position: 0% 50%;
 }
 .albumTwicetagram{
   border-radius:1rem;
-  background-image: linear-gradient(to right top, #f5d145, #f3dd75, #f2e8a1, #f4f1cb, #f9f9f4);
+  /*background-image: linear-gradient(to right top, #f5d145, #f3dd75, #f2e8a1, #f4f1cb, #f9f9f4);
+  */
+  background-image: linear-gradient(to right top, #e6f21a, #e0ec2a, #d9e635, #d3df3e, #cdd945, #ccd74d, #ccd454, #cbd25b, #cfd365, #d2d36e, #d5d478, #d8d581);
   transform: skew(5deg);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
   border-top: 1.5rem solid #C0C0C0;
   border-bottom: 1.5rem solid #C0C0C0;
+}
+.albumSignal{
+  border-radius:1rem;
+  background-image: linear-gradient(to right top, #d16ba5, #af5a9b, #8c4b8f, #683d81, #443072, #373d7f, #254989, #005491, #007db5, #00a7d1, #00d1e4, #5ffbf1);
+  transform: skew(5deg);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid #C71585;
+  border-bottom: 1.5rem solid #C71585;
+}
+.albumCoaster{
+  border-radius:1rem;
+  background-image: linear-gradient(to right top, #e75f11, #df9337, #daba6e, #dedbae, #f3f6ed);
+  transform: skew(5deg);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid #BDB76B;
+  border-bottom: 1.5rem solid #BDB76B;
+}
+.albumYes{
+  border-radius:1rem;
+  background-image: linear-gradient(to right top, #d62f2d, #e66757, #f29584, #f8c0b5, #f9ebe8);
+  transform: skew(5deg);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid #4B0082;
+  border-bottom: 1.5rem solid #4B0082;
 }
 .btnMusic {
   margin: .3rem auto;
@@ -302,6 +358,15 @@ display:flex;
 justify-content:space-evenly;
 text-transform: capitalize;
 margin-top:3rem;
+}
+.tracksUL  {
+  height: 9rem;
+ list-style-type:decimal-leading-zero;
+ margin-top:1rem;
+}
+.tracksUL li {
+  font-size: 75%;
+  color:#FFFFFF;
 }
 a.seeAll{
   width:12rem;
@@ -443,17 +508,31 @@ background:#F08080;
     .joinUs h3.footerH3{
       margin-top:-2rem;
     }
+    .albumPageTwo,.albumTwice,.albumTwicetagram,.albumSignal,.albumYes,.albumCoaster{
+      transform:skew(3deg);
+     }
+     .albumCard img{
+      max-width:17rem;
+    }
+    
   }
-    @media screen and (device-aspect-ratio: 40/71){
+  /*only for iphhone 5*/
+    @media screen and (device-aspect-ratio: 40/71){ 
       .tinyImg{
         max-width:5.0rem;
       } 
+      .albumPageTwo,.albumTwice,.albumTwicetagram,.albumSignal,.albumYes,.albumCoaster{
+       transform:none;
+      }
     }
+    /*only for galaxy s5*/
     @media only screen and (device-width:360px){
       .tinyImg{
         max-width:5.5rem;
-
       } 
+      .albumPageTwo,.albumTwice,.albumTwicetagram,.albumSignal,.albumYes,.albumCoaster{
+        transform: skew(2deg);
+       }
     }
     @media screen and (-ms-high-contrast: active), 
     (-ms-high-contrast: none) {
