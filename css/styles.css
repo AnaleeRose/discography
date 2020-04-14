@@ -24,11 +24,11 @@ hr {
 
 pre {
     font-family: monospace, monospace;
-    font-size: 1em;
+    font-size: 1em
 }
 
 a {
-    background-color: transparent;
+    background-color: transparent
 }
 
 abbr[title] {
@@ -217,6 +217,7 @@ a:hover,
 a:active {
     text-decoration: none
 }
+
 body {
     background-color: #fad8d4;
     background: linear-gradient(135deg, #ff8888 25%, transparent 25%) -50px 0, linear-gradient(225deg, #ff8888 25%, transparent 25%) -50px 0, linear-gradient(315deg, #ff8888 25%, transparent 25%), linear-gradient(45deg, #ff8888 25%, transparent 25%);
@@ -226,9 +227,9 @@ body {
     position: relative;
     width: 100%
 }
+
 .body {
-    padding-top: 2.5rem;
-	background: url("../bg.jpg");
+    padding-top: 2.5rem
 }
 
 .body:not(.noBodyGradient) {
@@ -236,8 +237,9 @@ body {
 }
 
 .wrapper {
-   /* background: rgba(250, 216, 212, .8);*/
+    background: rgba(250, 216, 212, .8)
 }
+
 p,
 a,
 label,
@@ -310,69 +312,40 @@ a:visited {
 }
 
 a:hover {
-    color: #f49882;
+    color: #f49882
 }
+
+.navHeader {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .8) 73%, rgba(250, 216, 212, .2) 100%)
+}
+
 .navHeader img {
-    max-width: 10rem;
+    max-width: 10rem
 }
-  .nav-item{
-    font-size: 1em;
-    text-align: center;
-    margin-top: 0;
-    cursor: pointer;
-    width: 100%;
-    background:#F0EDDB;
-    border-radius: 10px;
-    letter-spacing: 5px;
-	 color:black;
-  }
-.flex-sm-row{
-	display:inline;
+
+.navbar-nav {
+    background: rgba(250, 216, 212, .8);
+    border-radius: 10px
 }
-  .navbar-nav li{
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    width: 220px;
-    height: 40px;
-    margin-top: 4%;
-   transition-duration: 0.2s;
-   margin-bottom:-2px;
-  }
-   .nav-item:nth-child(odd){
-    transform: perspective(300px) rotateY(45deg);
-    box-shadow: -2px 2px 7px gray;
-  }
-  .nav-item:nth-child(even){
-    transform: perspective(300px) rotateY(-45deg);
-      box-shadow: 2px 2px 7px gray;
-  }
-  .nav-item:hover{
-    transform: rotateY(0);
-    background: #F3E3B3;
-    box-shadow: 0px 0px 0px;
-  }
-.carousel-inner {
-		width:100%;
-		height:600px;
-		background: transparent url(../imgs/new1.jpg) top left no-repeat;
-		background-size: 100% 100%;
-		margin:auto;
-		position:relative;
-	}
-	.carousel-item {
-		width:600px;
-		height:400px;
-	}
-	.carousel-item img {
-		/*top:100px;
-		z-index:100;*/
-		animation:drift 10s linear infinite;/*short hand*/
-  }		
-	@keyframes drift{
-		from{transform:translateX(60px);}
-		to{transform:translateY(-450px);}
-	}
+
+.navbar-nav a {
+    border-radius: 5px;
+    color: #38c37e
+}
+
+.navbar-nav a:hover {
+    color: #35af61;
+    text-shadow: 2px 2px 1px #2c776d, 4px 4px 1px #f9a733
+}
+
+a.current {
+    color: #32c553;
+    text-shadow: 2px 2px 1px #2c776d, 4px 4px 1px #f9a733
+}
+
+a.current:hover {
+    color: #32c553
+}
 
 .more {
     background: rgba(255, 255, 255, .9);
@@ -422,21 +395,11 @@ a.btn:focus {
     outline: 2px solid black
 }
 
-img{
+img {
     display: block;
     width: 100%
 }
-.navbar-brand img{
-	 -webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-30deg);
-        transform: rotateZ(-30deg);
-	    box-shadow: inset 0 0 0 25px gold;
-}
-.navbar-brand img:hover{
-	 -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-}
+
 .tinyImg {
     border-radius: 50%;
     height: 6rem;
@@ -681,7 +644,7 @@ a.seeAll {
 }
 
 .btnMusic {
-    border-radiu.btns: 15px;
+    border-radius: 15px;
     color: #000;
     margin: .3rem auto;
     display: block;
@@ -715,18 +678,7 @@ a.seeAll {
 }
 
 .btnGoogle img {
-    width: 1.7rem.albumCard{
-  width:25rem;
-}
-}
-.btnGoogle:before {
-    content: " ";
-    background: url(../imgs/musiclogos/play.pngs)
-}
-.btnGoogle img {
-    width: 1.7rem.albumCard{
-  width:25rem;
-}
+    width: 1.7rem
 }
 
 .btnGoogle:before {
@@ -1089,7 +1041,7 @@ input[type="submit"]:valid {
         width: 1px;
         z-index: -999
     }
-   .tinyImgGrid {
+    .tinyImgGrid {
         grid-column-gap: 2rem;
         grid-row-gap: .7rem;
         grid-template-columns: repeat(3, auto);

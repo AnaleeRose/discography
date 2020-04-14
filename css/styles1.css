@@ -22,7 +22,6 @@
   h2{
   text-align:center;
   color: #008000;
-  background: #FFFFFF;
   text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
   }
   h3{
@@ -367,6 +366,9 @@ margin-top:3rem;
 .tracksUL li {
   font-size: 75%;
   color:#FFFFFF;
+}
+.albumTwicetagram .tracksUL li{
+  font-size:60%;
 }
 a.seeAll{
   width:12rem;
