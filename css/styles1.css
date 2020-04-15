@@ -631,7 +631,7 @@ small{
       width:100%;
     }
   }
-  @media only screen and (device-width: 768px) { /*only for ipad*/
+  @media only screen and (width:768px) { /*only for ipad*/
     .navHeader img{
       display:none;
     }
@@ -643,7 +643,7 @@ small{
     }
   }
   /*only for iphhone 5*/
-    @media screen and (device-aspect-ratio: 40/71){ 
+    @media screen and (width:320px){ 
       .tinyImg{
         max-width:5.0rem;
       } 
@@ -664,7 +664,7 @@ small{
     }
   }
     /*only for galaxy s5*/
-    @media only screen and (device-width:360px){
+    @media only screen and (width:360px){
       .tinyImg{
         max-width:5.5rem;
       } 
