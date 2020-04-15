@@ -67,6 +67,13 @@ background-position:100% 50%;
 background-position: 0% 50%;
 }
 }
+.navHeader h1{
+color: #008000;
+background:	#EE82EE;
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+text-align:center;
+font-size:90%;
+}
 .navHeader img {
     max-width: 10rem;
 }
@@ -487,7 +494,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="date"
   background-color:#FFE4E1;
   }
 input[type="checkbox"] {
-  margin-left:0.5rem;
+  margin-left:0.3rem;
 }
 textarea{
 	vertical-align: middle;
@@ -555,9 +562,7 @@ small{
     padding:0;
     overflow-x:hidden;
     }
-    .navHeader h1{
-      display:none;
-    }
+    
     .carousel-inner{
       height:25rem;
     }
@@ -607,9 +612,6 @@ small{
     }
   }
   @media only screen and (device-width: 768px) { /*only for ipad*/
-    .navHeader h1{
-      display:none;
-    }
     .navHeader img{
       display:none;
     }
