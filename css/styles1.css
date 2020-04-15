@@ -10,7 +10,6 @@
 
   html{
     font-size: 100%;
-
   }
   body {
   background: url("../imgs/bg.jpg");
@@ -459,7 +458,91 @@ background:#F08080;
   font-size:110%;
   font-weight:bolder;
 }
-
+.form {
+  max-width:70rem;
+  padding:2rem;
+  border:0.2rem solid #FF00FF;
+  margin-top:2rem;
+}
+.form h3 {
+ color: #DB7093;
+}
+.bDay legend{
+  color:#DB7093;
+  font-size:90%;
+}
+.email label{
+ color: #DB7093;
+}
+.name label{
+ color:green;
+}
+.addressForm label{
+ color:green;
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea {
+  width:16rem;
+  padding:1rem;
+  border-radius:1rem;
+  background-color:#FFE4E1;
+  }
+input[type="checkbox"] {
+  margin-left:0.5rem;
+}
+textarea{
+	vertical-align: middle;
+}
+.bDay select{
+  width:9rem;
+  border-radius:1rem;;
+  background-color:#FFE4E1;
+  font-size: 70%;
+}
+#year{
+  width:9rem;
+}
+.form-control{
+  border-radius:1rem;
+  background-color:#FFE4E1;
+  width:9rem;
+  font-size: 70%;
+}
+.zipcode{
+  width:9rem;
+}
+input:valid,
+input[type="submit"]:valid {
+  border: 2px solid #71c671
+}
+#comments {
+  width:22rem;
+  height:9rem;
+}
+.joinText 
+ {
+  font-size:70%;
+  font-style: italic;
+}
+p.joinText {
+width:50%;
+margin-top:0.5rem;
+}
+.radio-inline{
+  font-size:70%;
+}
+.helpText {
+  white-space: nowrap
+}
+small{
+  font-size: 70%;
+}
+::placeholder{
+  font-size:100%;
+}
+#btnSubmit{
+  width:9rem;
+  margin:1rem;
+}
   @media screen and (min-width:992px) {
     .navHeader h1{
       display:none;
@@ -470,7 +553,7 @@ background:#F08080;
     width:100%;
     margin:0;
     padding:0;
-    overflow-x:hidden
+    overflow-x:hidden;
     }
     .navHeader h1{
       display:none;
@@ -516,7 +599,26 @@ background:#F08080;
      .albumCard img{
       max-width:17rem;
     }
-    
+    #comments {
+      width:16rem;
+    }
+    p.joinText{
+      width:100%;
+    }
+  }
+  @media only screen and (device-width: 768px) { /*only for ipad*/
+    .navHeader h1{
+      display:none;
+    }
+    .navHeader img{
+      display:none;
+    }
+    #comments{
+      width:14rem;
+    }
+    p.joinText{
+    width:100%;
+    }
   }
   /*only for iphhone 5*/
     @media screen and (device-aspect-ratio: 40/71){ 
@@ -526,6 +628,17 @@ background:#F08080;
       .albumPageTwo,.albumTwice,.albumTwicetagram,.albumSignal,.albumYes,.albumCoaster{
        transform:none;
       }
+      #comments {
+        width:14rem;
+      }
+      input[type="text"], input[type="number"], input[type="date"], textarea {
+        width:11rem;
+    }
+    input[type="email"]{
+      width:12rem;
+    }
+    p.joinText{
+      width:100%;
     }
     /*only for galaxy s5*/
     @media only screen and (device-width:360px){

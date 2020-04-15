@@ -933,7 +933,7 @@ input[type="submit"]:valid {
 .prefer>.joinText {
     color: #724c1a;
     display: inline-block;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .radio-inline {
