@@ -640,6 +640,7 @@ small{
     p.joinText{
       width:100%;
     }
+  }
     /*only for galaxy s5*/
     @media only screen and (device-width:360px){
       .tinyImg{
